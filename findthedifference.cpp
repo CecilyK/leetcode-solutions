@@ -3,7 +3,7 @@ using namespace std;
 
 char findTheDifference(string s, string t) {
         char v = 0;
-        for (char c: s) v ^= c;
+        for (char c: s) v ^= c;//bitwise operation to check odd one out
         for (char c: t) v ^= c;
         return v;
     }
